@@ -211,11 +211,11 @@ h1 {
 
 
 #get-tweets {
-  background: rgb(194, 199, 201);
+  background: #34495e;
   border-radius: 0 6px 6px 0;
   border: 0;
   bottom: 0;
-  color: rgb(9, 11, 63);
+  color: #fff;
   height: 100%;
   line-height: 1.3;
   position: absolute;
@@ -224,6 +224,11 @@ h1 {
   z-index: 1;
   font: 700 1.3em/50px "Open Sans";
   text-transform: uppercase;
+}
+
+#get-tweets:hover {
+  background: #c2c7c9;
+  color: #34495e;
 }
 
 .results {
