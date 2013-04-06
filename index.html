@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Twitter API search results</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/basecss.css">
+        <link href="http://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css"> 
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Get Tweets!</h1>
+            <form role="search" class="search-form" method="get" id="searchform" action="">
+                    <input type="search" placeholder="Enter search tearm" name="search" id="search">
+                    <input type="submit" id="get-tweets" value="Search">
+            </form>
+
+            <ul class="js-tweets">
+                
+            </ul>
+
+
+            <script src="js/vendor/jquery-1.9.1.min.js"></script>
+            <script src="js/main.js"></script>
+
+        </div>
+    </body>
+</html>
