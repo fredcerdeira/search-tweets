@@ -49,11 +49,11 @@ textarea {
 }
 
 ::-moz-selection {
-  background: #cfc8ff;
+  background: #fc2a79;
   text-shadow: none;
 }
 ::selection {
-  background: #cfc8ff;
+  background: #fc2a79;
   text-shadow: none;
 }
 
