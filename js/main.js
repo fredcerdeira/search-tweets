@@ -11,7 +11,13 @@ $(document).ready(function() {
 				q: inputVal
 			};
 
-		search(searchTerm);
+		if (inputVal != "" ){
+			search(searchTerm);
+		} else {
+			$('.status-msg').removeClass('hidden');
+		}
+
+
 	
 	});
 
@@ -21,7 +27,7 @@ $(document).ready(function() {
 
 
 function search(searchTerm) {
-	
+	$('.status-msg').addClass('hidden');
 	$('.loading').show();
 	
 	$.ajax({

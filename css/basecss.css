@@ -316,6 +316,11 @@ h1 {
   }
 }
 
+.status-msg {
+    color: #fc2a79;
+    font-size: 1.5em;
+}
+
 
 /* __END MODULES_________________________________*/
 
