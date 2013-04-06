@@ -186,6 +186,27 @@ body {
 
 /* __MODULES___________________________________*/
 
+header {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin: 0 0 2em 0;
+}
+
+header a {
+    color: #34495e;
+    list-style: none;
+    display: inline-block;
+    font: 400 1.1em/1 "Open Sans", sans-serif;
+    padding: .4em .7em .6em .7em;
+}
+
+header a:hover {
+    background: #34495e;
+    color: #fff;
+    text-decoration: none;
+}
+
 h1 {
   color: #34495e;
   font: 400 7em/1 'Abril Fatface', serif;
