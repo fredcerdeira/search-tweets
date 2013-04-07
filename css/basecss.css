@@ -198,7 +198,18 @@ header a {
     list-style: none;
     display: inline-block;
     font: 400 1.1em/1 "Open Sans", sans-serif;
-    padding: .4em .7em .6em .7em;
+    padding: .3em .5em .4em .5em;
+}
+
+header nav ul {
+  float: right;
+  display: inline-block;
+  width: 100%;
+}
+
+header nav li {
+  display: inline-block;
+  margin-left: .5em;
 }
 
 
@@ -212,6 +223,12 @@ header a.active {
      -ms-transition: background-color 1s;
      -o-transition: background-color 1s;
      transition: background-color 1s;
+}
+
+header nav ul li + li:before {
+  content: "|";
+  display: inline-block;
+  margin: 0 .7em 0 0;
 }
 
 h1 {
@@ -374,12 +391,13 @@ h1 {
 
 /* about section */
 .about {
-    min-height: 30px;
-    width: 96%;
+    min-height: 25px;
     background: #34495e;
-    float: left;
     color: #fff;
-    padding: 0 2%;
+    padding: 0 1%;
+    font-size: 1.05em;
+    float: right;
+    margin: 0 1px 0 0;
 }
 
 
