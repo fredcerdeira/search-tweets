@@ -169,6 +169,7 @@ input, textarea {
 /* 4__SITE STRUCTURE___________________________*/
 
 body {
+  font: 100%/1.5 sans-serif;
   font-size: 62.5%;
 }
 
@@ -236,7 +237,6 @@ h1 {
   color: #34495e;
   font: 400 7em/1 'Abril Fatface', serif;
   margin: .3em 0;
-
 }
 
 
@@ -256,6 +256,7 @@ h1 {
   padding: 1% 2%;
   width: 96%;
   outline: none;
+  text-shadow: 0 1px white;
 }
 
 
@@ -300,54 +301,28 @@ h1 {
 
 .results li img {
     display: inline-block;
-    height: 66px;
-    width: 66px;
+    height: 65px;
+    width: 65px;
+    border: 1px solid white;
+}
+
+.results li > a {
+    color: rgb(9, 11, 63);
+    float: left;
+    margin: 0 2% 0 0;
     border: 4px solid #34495e;
 }
 
-.results li > a {
-    color: rgb(9, 11, 63);
-    float: left;
-    margin: 0 2% 0 0;
-}
-
 .results li > a + a {
     display: table-cell;
     float: none;
-    height: 68px;
+    height: 63px;
     margin: 0;
     overflow: hidden;
     padding: 5px 0;
     vertical-align: middle;
     line-height: 1.2;
-}
-
-.results li > a + a:hover {
-    color: #fc2a79;
-    text-decoration: none;
-    -webkit-transition: color .8s;
-    -moz-transition: color .8s;
-    -ms-transition: color .8s;
-    -o-transition: color .8s;
-    transition: color .8s;
-}
-
-
-.results li > a {
-    color: rgb(9, 11, 63);
-    float: left;
-    margin: 0 2% 0 0;
-}
-
-.results li > a + a {
-    display: table-cell;
-    float: none;
-    height: 68px;
-    margin: 0;
-    overflow: hidden;
-    padding: 5px 0;
-    vertical-align: middle;
-    line-height: 1.2;
+    border: 0;
 }
 
 .results li > a + a:hover {
