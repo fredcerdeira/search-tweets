@@ -213,6 +213,7 @@ header nav li {
 }
 
 
+
 header a:hover,
 header a.active {
     background: #34495e;
@@ -303,6 +304,34 @@ h1 {
     width: 66px;
     border: 4px solid #34495e;
 }
+
+.results li > a {
+    color: rgb(9, 11, 63);
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+.results li > a + a {
+    display: table-cell;
+    float: none;
+    height: 68px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+.results li > a + a:hover {
+    color: #fc2a79;
+    text-decoration: none;
+    -webkit-transition: color .8s;
+    -moz-transition: color .8s;
+    -ms-transition: color .8s;
+    -o-transition: color .8s;
+    transition: color .8s;
+}
+
 
 .results li > a {
     color: rgb(9, 11, 63);
