@@ -198,8 +198,20 @@ header a {
     list-style: none;
     display: inline-block;
     font: 400 1.1em/1 "Open Sans", sans-serif;
-    padding: .4em .7em .6em .7em;
+    padding: .3em .5em .4em .5em;
 }
+
+header nav ul {
+  float: right;
+  display: inline-block;
+  width: 100%;
+}
+
+header nav li {
+  display: inline-block;
+  margin-left: .5em;
+}
+
 
 
 header a:hover,
@@ -212,6 +224,12 @@ header a.active {
      -ms-transition: background-color 1s;
      -o-transition: background-color 1s;
      transition: background-color 1s;
+}
+
+header nav ul li + li:before {
+  content: "|";
+  display: inline-block;
+  margin: 0 .7em 0 0;
 }
 
 h1 {
@@ -315,6 +333,34 @@ h1 {
 }
 
 
+.results li > a {
+    color: rgb(9, 11, 63);
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+.results li > a + a {
+    display: table-cell;
+    float: none;
+    height: 68px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+.results li > a + a:hover {
+    color: #fc2a79;
+    text-decoration: none;
+    -webkit-transition: color .8s;
+    -moz-transition: color .8s;
+    -ms-transition: color .8s;
+    -o-transition: color .8s;
+    transition: color .8s;
+}
+
+
 /* loading */
 .loading {
   margin: 10% auto;
@@ -374,12 +420,13 @@ h1 {
 
 /* about section */
 .about {
-    min-height: 30px;
-    width: 96%;
+    min-height: 25px;
     background: #34495e;
-    float: left;
     color: #fff;
-    padding: 0 2%;
+    padding: 0 1%;
+    font-size: 1.05em;
+    float: right;
+    margin: 0 1px 0 0;
 }
 
 

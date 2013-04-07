@@ -1,4 +1,4 @@
 search-tweets
 =============
 
-##Testing Twitter API
+Testing Twitter API without oauth.
