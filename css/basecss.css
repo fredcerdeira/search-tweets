@@ -201,18 +201,28 @@ header a {
     padding: .4em .7em .6em .7em;
 }
 
-header a:hover {
+
+header a:hover,
+header a.active {
     background: #34495e;
     color: #fff;
     text-decoration: none;
+     -webkit-transition: background-color 1s;
+     -moz-transition: background-color 1s;
+     -ms-transition: background-color 1s;
+     -o-transition: background-color 1s;
+     transition: background-color 1s;
 }
 
 h1 {
   color: #34495e;
   font: 400 7em/1 'Abril Fatface', serif;
-  margin: .5em 0;
+  margin: .3em 0;
+
 }
 
+
+/* Search form */
 .search-form {
   position: relative;
 }
@@ -252,25 +262,62 @@ h1 {
   color: #34495e;
 }
 
+
+
+/* results section */
 .results {
   list-style: none;
   margin: 2em 0;
 }
 
 .results li {
-  color: rgb(9, 11, 63);
-  display: inline-block;
-  font: 1.7em/1 "Open Sans", sans-serif;
-  margin: .7em 0;
-  width: 96%;
-  padding: 0 2%;
-  text-align: left;
+    color: rgb(9, 11, 63);
+    display: inline-block;
+    font: 1.6em/1 "Open Sans", sans-serif;
+    margin: .4em 0;
+    padding: 0 2%;
+    text-align: left;
+    width: 96%;
+}
+
+.results li img {
+    display: inline-block;
+    height: 66px;
+    width: 66px;
+    border: 4px solid #34495e;
+}
+
+.results li > a {
+    color: rgb(9, 11, 63);
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+.results li > a + a {
+    display: table-cell;
+    float: none;
+    height: 68px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+.results li > a + a:hover {
+    color: #fc2a79;
+    text-decoration: none;
+    -webkit-transition: color .8s;
+    -moz-transition: color .8s;
+    -ms-transition: color .8s;
+    -o-transition: color .8s;
+    transition: color .8s;
 }
 
 
-
+/* loading */
 .loading {
-  margin: auto;
+  margin: 10% auto;
   text-align: center;
   width: 100%;
   display: none;
@@ -316,9 +363,23 @@ h1 {
   }
 }
 
+
+
 .status-msg {
     color: #fc2a79;
     font-size: 1.5em;
+    margin: 1em 0;
+}
+
+
+/* about section */
+.about {
+    min-height: 30px;
+    width: 96%;
+    background: #34495e;
+    float: left;
+    color: #fff;
+    padding: 0 2%;
 }
 
 
