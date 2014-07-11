@@ -51,7 +51,7 @@ function search(searchTerm) {
 	
 
 	$.ajax({
-		url: 'https://search.twitter.com/search.json?' + $.param(searchTerm) + '&rpp=5',
+		url: 'https://search.twitter.com/search?' + $.param(searchTerm) + '&rpp=5',
 		dataType: 'jsonp',
 		success: function(data) {
 			
